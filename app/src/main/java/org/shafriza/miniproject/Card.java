@@ -1,16 +1,27 @@
 package org.shafriza.miniproject;
 
-public class Card {
+public class  Card {
     private int img;
     private String title;
     private String description;
+    private int price;
 
-    public Card(int img, String title, String description) {
+
+
+    public Card(int img, String title, String description, int price) {
         this.img = img;
         this.title = title;
         this.description = description;
+        this.price = price;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
     public int getImg() {
         return img;
     }

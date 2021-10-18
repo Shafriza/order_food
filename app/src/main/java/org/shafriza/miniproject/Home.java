@@ -47,29 +47,24 @@ public class Home extends AppCompatActivity {
 
     public void getDataMakanan(){
         cardArrayList = new ArrayList<>();
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description1"));
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description2"));
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description3"));
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description4"));
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description5"));
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description6"));
-        cardArrayList.add(new Card(R.drawable.egg_02,"title1","description7"));
+        cardArrayList.add(new Card(R.drawable.steak,"Beef Steak","description1",23000));
+        cardArrayList.add(new Card(R.drawable.nasgor,"Nasi Goreng","description1",23000));
 
     }
 
     public void getDataMinuman(){
         cardArrayList = new ArrayList<>();
-        cardArrayList.add(new Card(R.drawable.egg_02,"title2","description2"));
+        cardArrayList.add(new Card(R.drawable.egg_02,"title2","description2",50000));
 
     }
     public void getDataSnack(){
         cardArrayList = new ArrayList<>();
-        cardArrayList.add(new Card(R.drawable.egg_02,"title3","description3"));
+        cardArrayList.add(new Card(R.drawable.egg_02,"title3","description3",10000));
 
     }
     public void getDataDessert(){
         cardArrayList = new ArrayList<>();
-        cardArrayList.add(new Card(R.drawable.egg_02,"title4","description4"));
+        cardArrayList.add(new Card(R.drawable.egg_02,"title4","description4",30000));
 
     }
 }
