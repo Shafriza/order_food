@@ -45,6 +45,8 @@ public class CardAdaptor extends RecyclerView.Adapter<CardAdaptor.CardViewHolder
         holder.tvDc.setText(listCard.get(position).getDescription());
         holder.pict.setImageResource(listCard.get(position).getImg());
 
+
+
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClickListener(View v, int position) {
@@ -65,7 +67,7 @@ public class CardAdaptor extends RecyclerView.Adapter<CardAdaptor.CardViewHolder
                 intent.putExtra("iTitle",gTitle);
                 intent.putExtra("iDesc",gDesc);
                 intent.putExtra("iImage", listCard.get(position).getImg());
-                intent.putExtra("price",listCard.get(position).getPrice());
+                intent.putExtra("price","Rp."+listCard.get(position).getPrice());
 
                 context.startActivity(intent);
             }
@@ -78,9 +80,15 @@ public class CardAdaptor extends RecyclerView.Adapter<CardAdaptor.CardViewHolder
         return (listCard != null)? listCard.size() : 0;
     }
 
+    void setFilter(ArrayList<Card> filterList){
+        listCard = new ArrayList<>();
+        listCard.addAll(filterList);
+        notifyDataSetChanged();
+    }
+
     public class CardViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private ImageView pict;
-        private TextView tvTitle, tvDc;
+        private TextView tvTitle, tvDc,price;
         private ItemClickListener itemClickListener;
         private CardView cv;
 

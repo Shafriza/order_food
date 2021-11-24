@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//start of mengambil nilai pada masing masing card
+//start of mengambil nilai pada masing masing cardd
         cd1 = findViewById(R.id.card_food);
         cd1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

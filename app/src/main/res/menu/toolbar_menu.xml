@@ -1,0 +1,23 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:titleTextColor="@android:color/white"
+    android:background="@color/primary"
+    tools:context=".Home"
+    >
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item><item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"
+        app:showAsAction="ifRoom|withText"
+        android:title="Cart">
+    </item>
+    <item
+        android:id="@+id/test_item"
+        android:title="Test Item"></item>
+</menu>

@@ -4,8 +4,7 @@ public class  Card {
     private int img;
     private String title;
     private String description;
-    private int price;
-
+    private int  price;
 
 
     public Card(int img, String title, String description, int price) {
